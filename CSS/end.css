@@ -1,0 +1,80 @@
+/* ----- */
+/* ----- */
+/* Optik für die End-Seite/den Punktestand */
+/* ----- */
+/* ----- */
+
+/* ----- Ende: Allgemein ----- */
+.end {
+    /* Hintergrundfarbe */
+    background-color: rgb(255, 204, 0);
+
+    /* Breite */
+    width: 50%;
+
+    /* Rand um den Text */
+    padding: 30px;
+
+    /* Rand um das Overlay + Abrundung der Ecken */
+    border: 4px solid black;
+    border-radius: 25px;
+
+    /* Text zentrieren */
+    text-align: center;
+}
+
+/* ----- Ende: Text ----- */
+.end h1 {
+    /* Schriftgröße anpassen */
+    font-size: 3.75rem;
+}
+
+.end h2 {
+    /* Schriftgröße anpassen */
+    font-size: 5.25rem;
+
+    /* Abstand nach oben */
+    margin-top: 15px;
+}
+
+.win {
+    /* Wir im 'default' nicht angezeigt */
+    display: none;
+
+    /* Farbe der Schrift */
+    color: green;
+
+    /* Abstand nach unten */
+    margin-bottom: 10px;
+}
+
+.lose {
+    /* Wir im 'default' nicht angezeigt */
+    display: none;
+
+    /* Farbe der Schrift */
+    color: darkred;
+
+    /* Abstand nach unten */
+    margin-bottom: 10px;
+
+}
+
+/* ----- Ende: Zurück Knopf ----- */
+.end button {
+    /* Rand um Knopftext und Abstand nach oben */
+    padding: 10px;
+    margin-top: 20px;
+
+    /* Abrundung der Ecken */
+    border-radius: 10px;
+
+    /* Schriftgröße anpassen */
+    font-size: 1.25rem;
+
+    /* Mauszeiger geändert */
+    cursor: pointer;
+
+    /* Hintergrundfarbe anpassen */
+    background-color: #e7e7e7;
+}

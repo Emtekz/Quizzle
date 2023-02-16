@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizzle</title>
+
+    <!-- Quizzle: Ein Quizspiel -->
+    <!-- Quizzle ist ein Quiz, welches von allen gespielt werden kann. -->
+
+    <!-- Fortschritts-Log -->
+    <!-- 15.02.23: Grundstein -->
+    <!-- 15.02.23: Overlay V 0.1 angefangen -->
+    <!-- 15.02.23: Overlay V 0.1 fertig -->
+    <!-- 15.02.23: Code (Auswertung) V 0.1 angefangen -->
+    <!-- 15.02.23: Auswertung V 0.1 = fertig -->
+    <!-- 15.02.23: Code (Fragenauswahl) V 0.1 angefangen -->
+    <!-- 15.02.23: Fragenauswahl V 0.1 = fertig -->
+    <!-- 16.02.23: Fragenauswahl V 0.2 angefangen -->
+    <!-- 16.02.23: Fragenauswahl V 0.2 = fertig -->
+    <!-- 16.02.23: Code (Reset) V 0.1 angefangen -->
+    <!-- 16.02.23: Reset V 0.1 = fertig -->
+    <!-- 16.02.23: Auswertung V 0.2 angefangen -->
+    <!-- 16.02.23: Auswertung V 0.2 = fertig -->
+    <!-- 16.02.23: Code (Ende) V 0.1 angefangen -->
+    <!-- 16.02.23: Ende V 0.1 = fertig -->
+    <!-- 16.02.23: Overlay Ende V 0.1 angefangen -->
+    <!-- 16.02.23: Overlay Ende V 0.1 = fertig -->
+
+    <!-- CSS Einbindungen (Optik) -->
+    <link rel="stylesheet" href="CSS/generals.css">         <!-- Generelles -->
+    <link rel="stylesheet" href="CSS/question_overlay.css"> <!-- Fragen-Overlay -->
+    <link rel="stylesheet" href="CSS/header.css">           <!-- Fragen-Overlay -->
+
+    <!-- JS Einbindungen (Funtkionen) -->
+    <script src="Lib/eval.js" defer></script>
+    <script src="Lib/question_pool.js" defer></script>
+    <script src="Lib/reset.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <!-- Logo -->
+        <!-- <img src="Images/Logo.png" onclick="pickQuestion();"> -->
+        <img src="Images/Logo.png"">
+    </header>
+
+    <main class="quizzle">
+
+        <div class="question">
+            <!-- Platz für die Frage -->
+            <h2 id="question">Frage</h2>
+        </div>
+
+        <div class="picture">
+            <!-- Bild zur Frage -->
+            <img src="Images/Fragezeichen.jpg" id="picture">
+        </div>
+
+
+        <div class="answers">
+            <!-- Antwortmöglichkeiten -->
+            <button class="btn" 
+            onclick="eval(0)"
+            onmouseover="this.style.backgroundColor = '#9a9a9a'; this.style.color = 'white'"
+            onmouseleave="this.style.backgroundColor = '#e7e7e7'; this.style.color = 'black'">
+
+                <p id="a" class="answ">a</p>
+            </button>
+
+            <button class="btn" 
+            onclick="eval(1)"
+            onmouseover="this.style.backgroundColor = '#9a9a9a'; this.style.color = 'white'"
+            onmouseleave="this.style.backgroundColor = '#e7e7e7'; this.style.color = 'black'">
+
+                <p id="b" class="answ">b</p>
+            </button>
+
+            <button class="btn" 
+            onclick="eval(2)"
+            onmouseover="this.style.backgroundColor = '#9a9a9a'; this.style.color = 'white'"
+            onmouseleave="this.style.backgroundColor = '#e7e7e7'; this.style.color = 'black'">
+
+                <p id="c" class="answ">c</p>
+            </button>
+
+            <button class="btn" 
+            onclick="eval(3)"
+            onmouseover="this.style.backgroundColor = '#9a9a9a'; this.style.color = 'white'"
+            onmouseleave="this.style.backgroundColor = '#e7e7e7'; this.style.color = 'black'">
+            
+                <p id="d" class="answ">d</p>
+            </button>
+        </div>
+    </main>
+</body>
+
+</html>

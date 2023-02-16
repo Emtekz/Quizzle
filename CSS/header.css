@@ -1,0 +1,23 @@
+/* ----- */
+/* ----- */
+/* Optik für den Header/das Logo */
+/* ----- */
+/* ----- */
+
+/* ----- Logo: Allgemein ----- */
+header {
+    /* Freie Positionierung mit Abstand nach oben und links */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* ----- Logo: Bild ----- */
+header img {
+    /* Breite des Bildes */
+    width: 25vh;
+
+    /* Rand nach Links und Oben */
+    padding-left: 15px;
+    padding-top: 5px;
+}

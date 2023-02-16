@@ -1,0 +1,95 @@
+/* ----- */
+/* ----- */
+/* Optik für das Fragen-Overlay */
+/* ----- */
+/* ----- */
+
+/* ----- Variablen ----- */
+:root {
+    --border-radius: 30px;
+}
+
+/* ----- Fragen-Overlay: Allgemein ----- */
+main {
+    /* Breite */
+    width: 86%;
+
+    /* Rand um Overlay */
+    border: 2px solid black;
+
+    /* Abrundung der Ecken */
+    border-radius: 30px;
+
+    /* Alles überstehende wird ausgeblendet */
+    overflow: hidden;
+}
+
+/* ----- Fragen-Overlay: Frage ----- */
+.question {
+    /* Inhalt Zentrieren */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Hintergrundfarbe */
+    background-color: lightgoldenrodyellow;
+
+    /* Text in '.question' wird zentriert */
+    text-align: center;
+}
+
+.question h2 {
+    /* Breite (in Container '.question') */
+    width: 90%;
+
+    /* Schriftgröße */
+    font-size: 2rem;
+
+    /* Rand um Text */
+    padding: 20px;
+}
+
+
+/* ----- Fragen-Overlay: Bild ----- */
+.picture {
+    /* Inhalt Zentrieren */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.picture img {
+    /* Höhe/Breite */
+    height: calc(1vh * 50);
+    width: 100%;
+
+    /* Bild füllt Container aus und zentral platziert */
+    object-fit: cover;
+    object-position: center;
+
+}
+
+
+/* ----- Fragen-Overlay: Antworten ----- */
+.answers {
+    /* Inhalt in Gitter (2 Spalten) */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.answers button {
+    /* Hintergrundfarbe anpassen */
+    background-color: #e7e7e7;
+
+    /* Schriftgröße */
+    font-size: 1.5rem;
+
+    /* Rand um Text */
+    padding: 15px;
+
+    /* Rand um jeden Button */
+    border: 1px solid #8e8e8e;
+
+    /* Mauszeiger anpassen */
+    cursor: pointer;
+}
