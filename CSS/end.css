@@ -78,3 +78,18 @@
     /* Hintergrundfarbe anpassen */
     background-color: #e7e7e7;
 }
+
+/* ----- Responsive ----- */
+@media (max-width: 600px) {
+    .end h1 {
+        font-size: 1.5rem;
+    }
+
+    .end h2 {
+        font-size: 1.75rem;
+    }
+
+    .end button {
+        font-size: 0.75rem;
+    }
+}

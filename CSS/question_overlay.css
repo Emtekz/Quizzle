@@ -93,3 +93,15 @@ main {
     /* Mauszeiger anpassen */
     cursor: pointer;
 }
+
+/* ----- Responsive ----- */
+@media (max-width: 600px) {
+    .question h2 {
+        font-size: 1.25rem;
+    }
+
+    .answers button {
+        font-size: 1.15rem;
+    }
+
+}
