@@ -33,13 +33,19 @@ function endQuiz() {
         endScore.innerHTML = 0;
     }
 
+    // Wenn der Punktestand 20 beträgt...
     if (final.get('score') == 20){
+        // ...dann zeige "Alle Fragen richtig beantwortet" an.
         document.getElementById('win').style.display = "block";
     }
     
+    // Wenn der Punktestand 0 beträgt...
     if (final.get('score') == 0){
+
+        // ...dann zeige "Keine Frage richtig beantwortet" an.
         document.getElementById('lose').style.display = "block";
     }
 }
 
+// Funktion wird ausgeführt
 endQuiz();

@@ -177,6 +177,7 @@ function pickQuestion() {
     // Die gewählte Frage wird ausgegeben
     document.getElementById('question').innerHTML = pickedQuest;
 
+    // Das dazugehörige Bild wird angezeigt
     document.getElementById('picture').src = pickedPic;
 
     // Für alle 4 Antwortmöglichkeiten wird...

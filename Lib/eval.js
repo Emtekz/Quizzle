@@ -5,9 +5,11 @@
 
 /** 
  * ----- Variablen -----
- * Hier werden alle Buttons in der Variable gespeichert
+ * Hier werden alle Buttons in der Variable @buttons gespeichert
  * - Zugriff wie bei Array -> buttons[index] 
  * - index fängt bei 0 an
+ * 
+ * @score Variable für den Punktestand
 */
 const buttons = document.getElementsByClassName('btn');
 
@@ -38,8 +40,6 @@ function eval(input) {
         // ...wird der Punktestand um 1 erhöht,...
         score += 1;
 
-        console.log(score);
-
         // ...Färbe den Button grün und die Schrift weiß,...
         buttons[correct].style.backgroundColor = "green";
         buttons[correct].style.color = "white";
@@ -49,7 +49,7 @@ function eval(input) {
             buttons[i].disabled = true;
         }
 
-        // ...und zeige für kurze Zeit das Ergebnis.
+        // ...und zeige für kurze Zeit (1,5 s) das Ergebnis.
         setTimeout(() => {
 
             if(score == 20){
@@ -78,10 +78,8 @@ function eval(input) {
             buttons[i].disabled = true;
         }
 
-        // ...und zeige für kurze Zeit das Ergebnis.
+        // ...und zeige für kurze Zeit (1,5 s) das Ergebnis.
         setTimeout(() => {
-
-            console.log("Dein Endscore: " + score);
 
             // Seitenwechsel zum Ende und der Score wird per URL übergeben.
             window.location = "end.html?score=" + score;
