@@ -46,7 +46,7 @@ const questionPool = [
     "Wer war der erste Bundeskanzler der Bundesrepublik Deutschland?",
     "Wie viele Bundesländer hat Deutschland?",
     "Wie heißt der Götterbote in der griechischen Mythologie?",
-    "Wer hat die Elektizität entdeckt?",
+    "Wer erfand die drahtlose Energieübertragung?",
     "Von welchem Planeten stammt Spock (StarTrek)?", //15
     "Von wann bis wann ging der 2. Weltkrieg?",
     "Welches ist das teuerste Metall der Welt?",
