@@ -52,7 +52,7 @@ const questionPool = [
     "Welches ist das teuerste Metall der Welt?",
     "Welches ist das größte Organ des Menschen?",
     "Welche ist die weltweit größte Stadt?",
-    "Welches Pokemon ist als erstes entstanden ?"
+    "Welches Pokemon ist als erstes entstanden ?" //20
 ];
 
 const answerPool = [
