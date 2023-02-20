@@ -216,4 +216,5 @@ function pickQuestion() {
     }
 }
 
+// Funktion wird ausgeführt
 pickQuestion();
